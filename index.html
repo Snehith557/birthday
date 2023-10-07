@@ -5,13 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .birthday-card {
+            text-align: center;
+            padding: 50px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            position: relative;
+        }
+
+        .birthday-card img {
+            border-radius: 50%;
+            margin-top: 20px;
+            max-width: 100%;
+        }
+
+        .cake-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .cake {
+            max-width: 200px;
+        }
+    </style>
 </head>
 
 <body>
-    <div style="text-align: center;">
+    <div class="birthday-card">
         <h1>Happy Birthday!</h1>
-        <img src="birthday.jpg" alt="Birthday Cake">
-        <p>Wishing you a day filled with love, laughter, and joy!</p>
+        <img src="IMG_20230413_153534.jpg" alt="Birthday Cake" width="500px">
+        <h1>Wishing you a day filled with love, laughter, and joy!</h1>
+        <div class="cake-container">
+            <img src="cake1.jpg" alt="Cake 1" class="cake">
+            <img src="cake2.jpg" alt="Cake 2" class="cake">
+        </div>
     </div>
 </body>
 
